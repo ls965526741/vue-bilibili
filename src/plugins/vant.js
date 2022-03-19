@@ -1,0 +1,65 @@
+import Vue from 'vue'
+import {
+  Button,
+  Tabbar,
+  TabbarItem,
+  Dialog,
+  Icon,
+  Form,
+  Field,
+  ActionSheet,
+  Popover,
+  Checkbox,
+  CheckboxGroup,
+  Badge,
+  Image as VanImage,
+  Cell,
+  CellGroup,
+  Switch,
+  NavBar,
+  Toast,
+  Tag,
+  Col,
+  Row,
+  Popup,
+  Progress,
+  Tab,
+  Tabs,
+  Collapse,
+  CollapseItem,
+  Loading,
+  List
+} from 'vant'
+
+Vue.use(Button)
+Vue.use(Tabbar)
+Vue.use(TabbarItem)
+Vue.use(Dialog)
+Vue.use(Icon)
+Vue.use(Form)
+Vue.use(Field)
+Vue.use(ActionSheet)
+Vue.use(Popover)
+Vue.use(Checkbox)
+Vue.use(CheckboxGroup)
+Vue.use(Badge)
+Vue.use(VanImage)
+Vue.use(Cell)
+Vue.use(CellGroup)
+Vue.use(Switch)
+Vue.use(NavBar)
+Vue.use(Form)
+Vue.use(Field)
+Vue.use(Button)
+Vue.use(Toast)
+Vue.use(Tag)
+Vue.use(Col)
+Vue.use(Row)
+Vue.use(Popup)
+Vue.use(Progress)
+Vue.use(Tab)
+Vue.use(Tabs)
+Vue.use(Collapse)
+Vue.use(CollapseItem)
+Vue.use(Loading)
+Vue.use(List)

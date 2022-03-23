@@ -46,15 +46,15 @@ npm run serve
 
 #### 主页面
 
-<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-e3306813-c467-4fe2-a5b0-4f80a8d3051e/e71c9570-388a-4ea6-bfe6-f0fe53bad696.png" style="width:100%; margin-top:10px;"alt="">
+<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-e3306813-c467-4fe2-a5b0-4f80a8d3051e/e71c9570-388a-4ea6-bfe6-f0fe53bad696.png" style="width:100%; margin-top:10px;" alt="">
 
 #### 详情页
 
-<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-e3306813-c467-4fe2-a5b0-4f80a8d3051e/ebacfa75-7a1a-49a7-a8f2-cb28dac115fd.png" style="width:100%; margin-top:10px;"alt="">
+<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-e3306813-c467-4fe2-a5b0-4f80a8d3051e/ebacfa75-7a1a-49a7-a8f2-cb28dac115fd.png" style="width:100%; margin-top:10px;" alt="">
 
 #### 个人中心
 
-<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-e3306813-c467-4fe2-a5b0-4f80a8d3051e/b913e085-0b80-45d6-8570-3cc5fcbfb19a.png" style="width:100%; margin-top:10px;"alt="">
+<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-e3306813-c467-4fe2-a5b0-4f80a8d3051e/b913e085-0b80-45d6-8570-3cc5fcbfb19a.png" style="width:100%; margin-top:10px;" alt="">
 
 ### 关于我
 

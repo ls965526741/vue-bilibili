@@ -1,14 +1,14 @@
 <template>
   <div class="search">
     <div class="left">
-      <img src="/img/common/logo.png" alt="" @click="$router.push('/home')" />
+      <img :src="`${publicPath}/img/common/logo.png`" alt="" @click="$router.push('/home')" />
     </div>
     <div class="center">
       <input type="search" class="se" placeholder="请输入搜索内容" />
     </div>
     <div class="img" @click="$router.push('/profile')">
       <img v-if="userimg" :src="userimg" alt="" />
-      <img v-else src="/img/common/noface.jpg" alt="" />
+      <img v-else :src="`${publicPath}/img/common/noface.jpg`" alt="" />
     </div>
     <div class="right"><div class="load">下载app</div></div>
   </div>
@@ -19,6 +19,11 @@ export default {
   computed: {
     userimg() {
       return localStorage.getItem('userimg')
+    }
+  },
+  data() {
+    return {
+      publicPath: process.env.BASE_URL
     }
   }
 }

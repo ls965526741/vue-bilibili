@@ -1,8 +1,8 @@
 const path = require('path')
 // less文件的路径
 const myTheme = path.join(__dirname, './src/assets/css/vantTheme.less')
-console.log(myTheme)
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'development' ? '/bilibili/' : '/bilibili/',
   configureWebpack: {
     devtool: 'eval-source-map'
   },

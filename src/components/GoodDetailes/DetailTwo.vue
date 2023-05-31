@@ -16,6 +16,8 @@
 </template>
 
 <script>
+const publicPath = process.env.BASE_URL
+
 export default {
   props: {
     list: {
@@ -23,7 +25,7 @@ export default {
       default() {
         return [
           {
-            img: '/img/goods1.webp',
+            img: publicPath + '/img/goods1.webp',
             title: '就发生的龙卷风收到货发生的',
             count: 5,
             play_count: 321435,
@@ -31,7 +33,7 @@ export default {
             time: 123453
           },
           {
-            img: '/img/goods1.webp',
+            img: publicPath + '/img/goods1.webp',
             title: '就发生的龙卷风收到货发生的 阿斯顿发计划书店里辅导书给客',
             count: 5,
             play_count: 321435,

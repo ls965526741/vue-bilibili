@@ -16,6 +16,7 @@
 </template>
 
 <script>
+const publicPath = process.env.BASE_URL
 export default {
   props: {
     list: {
@@ -27,7 +28,7 @@ export default {
   },
   data() {
     return {
-      userImage: '/img/goods1.webp'
+      userImage: `${publicPath}/img/goods1.webp`
     }
   },
   methods: {}

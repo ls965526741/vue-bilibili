@@ -41,7 +41,7 @@ import HomeDetail from '@/components/childComps/HomeDetail.vue'
 import CommitTitle from './CommitTitle.vue'
 import Commit from './Commit.vue'
 import ArticleItem from './ArticleItem.vue'
-
+const publicPath = process.env.BASE_URL
 export default {
   components: {
     DetailBar,
@@ -52,7 +52,7 @@ export default {
   },
   data() {
     return {
-      videoSrc: ['/mp4/m1.mp4', '/mp4/m2.mp4', '/mp4/m3.mp4', '/mp4/m4.mp4'],
+      videoSrc: [`${publicPath}/mp4/m1.mp4`, `${publicPath}/mp4/m2.mp4`, `${publicPath}/mp4/m3.mp4`, `${publicPath}/mp4/m4.mp4`],
       active: true,
       parent_id: '',
       subCommitData: {

@@ -33,14 +33,15 @@
 </template>
 
 <script>
+const publicPath = process.env.BASE_URL
 export default {
   data() {
     return {
       activeNames: ['1'],
       list: [
-        { img: '/img/goods1.webp', name: '默认收藏夹', count: 6 },
-        { img: '/img/goods1.webp', name: 'ed', count: 6 },
-        { img: '/img/goods1.webp', name: 'ing', count: 6 }
+        { img: `${publicPath}/img/goods1.webp`, name: '默认收藏夹', count: 6 },
+        { img: `${publicPath}/img/goods1.webp`, name: 'ed', count: 6 },
+        { img: `${publicPath}/img/goods1.webp`, name: 'ing', count: 6 }
       ],
       subscription: []
     }

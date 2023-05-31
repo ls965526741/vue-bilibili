@@ -47,6 +47,7 @@
 </template>
 
 <script>
+const publicPath = process.env.BASE_URL
 export default {
   data() {
     return {
@@ -62,15 +63,15 @@ export default {
         { id: '7', checked: false, color: '#ccc', title: '罗兰紫', pic: '5硬币/月' }
       ],
       recommendList: [
-        { id: 1, image: '/img/goods1.webp', title: '雪狐桑', pic: '48B|永久' },
-        { id: 2, image: '/img/goods1.webp', title: '伊万', pic: '46B|永久' },
-        { id: 3, image: '/img/goods1.webp', title: 'EDG.LPL出征', pic: '55B|永久' }
+        { id: 1, image: `${publicPath}/img/goods1.webp`, title: '雪狐桑', pic: '48B|永久' },
+        { id: 2, image: `${publicPath}/img/goods1.webp`, title: '伊万', pic: '46B|永久' },
+        { id: 3, image: `${publicPath}/img/goods1.webp`, title: 'EDG.LPL出征', pic: '55B|永久' }
       ]
     }
   },
   computed: {
     filterColor() {
-      return function (id) {
+      return function(id) {
         return this.currentId === id
       }
     }

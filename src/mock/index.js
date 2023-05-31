@@ -2,6 +2,7 @@
 // const { pop } = require('core-js/core/array')
 var Mock = require('mockjs')
 var Random = Mock.Random
+const publicPath = process.env.BASE_URL
 Mock.setup({
   timeout: '200-1500'
 })
@@ -38,14 +39,14 @@ const userData = [
     username: 'liaoshuai',
     password: '123456',
     token: Random.cword('string', 10, 20),
-    user_img: '/img/common/user.png'
+    user_img: publicPath + '/img/common/user.png'
   }
 ]
 const profile = [
   {
     uid: '1',
     name: '管理员',
-    user_img: '/img/common/user.png',
+    user_img: publicPath + '/img/common/user.png',
     userInfo: '无',
     gender: '1',
     date: '1631361560833'
@@ -75,7 +76,7 @@ const goods = function() {
     title: Random.cword(10, 20),
     favour: Random.string('number', 1, 3),
     count: Random.string('number', 2, 5),
-    image: '/img/goods/bl' + Random.string('number', 1) + '.webp'
+    image: publicPath + '/img/goods/bl' + Random.string('number', 1) + '.webp'
   }
   return o
 }
@@ -203,11 +204,11 @@ Mock.mock('/category', 'get', req => {
 Mock.mock(/\/theme\/(s*)/, 'get', req => {
   const o = {
     theme: [
-      { image: '/img/theme/t0.jpg', id: 0 },
-      { image: '/img/theme/t1.jpg', id: 1 },
-      { image: '/img/theme/t2.jpg', id: 2 },
-      { image: '/img/theme/t3.jpg', id: 3 },
-      { image: '/img/theme/t4.jpg', id: 4 }
+      { image: publicPath + '/img/theme/t0.jpg', id: 0 },
+      { image: publicPath + '/img/theme/t1.jpg', id: 1 },
+      { image: publicPath + '/img/theme/t2.jpg', id: 2 },
+      { image: publicPath + '/img/theme/t3.jpg', id: 3 },
+      { image: publicPath + '/img/theme/t4.jpg', id: 4 }
     ],
     current: 0
   }

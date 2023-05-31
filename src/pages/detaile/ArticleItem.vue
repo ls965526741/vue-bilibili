@@ -4,15 +4,15 @@
       <div class="item">打开App， 流畅又高清</div>
       <div class="item1">
         这么可爱，不好吧
-        <span @click="isshow" v-if="show"><van-icon name="arrow-up" /></span>
-        <span @click="isshow" v-else><van-icon name="arrow-down" /></span>
+        <span @click="isshow" v-if="show"><van-icon name="arrow-up"/></span>
+        <span @click="isshow" v-else><van-icon name="arrow-down"/></span>
       </div>
     </div>
     <div class="main">
       <div class="mainItem" v-if="!show">
         <div>
           <img v-if="isuserImage" :src="isuserImage" alt="" />
-          <img v-else src="/img/common/noface.jpg" alt="" />
+          <img v-else :src="`${publicPath}/img/common/noface.jpg`" alt="" />
           <span>欣小萌</span>
         </div>
         <div class="child1">
@@ -25,7 +25,7 @@
         <div class="top">
           <div class="img">
             <img v-if="isuserImage" :src="isuserImage" alt="" />
-            <img v-else src="/img/common/noface.jpg" alt="" />
+            <img v-else :src="`${publicPath}/img/common/noface.jpg`" alt="" />
           </div>
           <div class="user_name"><span>欣小萌</span><span>345万粉丝</span></div>
           <div class="attention" @click="attentionClick">
@@ -55,7 +55,8 @@ export default {
       isattention: true,
       show: false,
       praise: false,
-      count: 7789
+      count: 7789,
+      publicPath: process.env.BASE_URL
     }
   },
   methods: {

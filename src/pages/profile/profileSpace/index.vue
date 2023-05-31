@@ -80,6 +80,7 @@ import UserImg from '@/components/UserImg/index'
 import ProfileHome from './ProHome.vue'
 import Dynamic from './Dynamic.vue'
 import Collect from './Collect.vue'
+const publicPath = process.env.BASE_URL
 export default {
   components: {
     UserImg,
@@ -90,7 +91,7 @@ export default {
   data() {
     return {
       name: 'liaoshuai',
-      userImage: '/img/user.png',
+      userImage: `${publicPath}/img/user.png`,
       isShow: true,
       count: 1300,
       allCount: 1500,

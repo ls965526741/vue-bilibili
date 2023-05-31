@@ -4,7 +4,7 @@
       <div class="commit_item">
         <div class="left">
           <img v-if="item.image" :src="item.image" alt="" />
-          <img v-else src="/img/common/noface.jpg" alt="" />
+          <img v-else :src="`${publicPath}/img/common/noface.jpg`" alt="" />
         </div>
         <div class="right">
           <div class="name">
@@ -32,6 +32,11 @@ export default {
       default() {
         return []
       }
+    }
+  },
+  data() {
+    return {
+      publicPath: process.env.BASE_URL
     }
   },
   methods: {

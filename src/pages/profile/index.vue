@@ -9,8 +9,8 @@
       <div class="user_info">
         <div class="user_img">
           <van-badge content="大" color="#fb7299">
-            <van-image v-if="!isLogin" round width="50px" height="50px" src="/img/bilibili-line.png" />
-            <van-image v-else round width="50px" height="50px" src="/img/bilibili-line.png" />
+            <van-image v-if="!isLogin" round width="50px" height="50px" :src="`${publicPath}/img/bilibili-line.png`" />
+            <van-image v-else round width="50px" height="50px" :src="`${publicPath}/img/bilibili-line.png`" />
           </van-badge>
         </div>
         <div class="user_name">
@@ -88,6 +88,7 @@ export default {
   },
   data() {
     return {
+      publicPath: process.env.BASE_URL,
       isLogin: false,
       list: [
         { id: 1, path: '/', title: '离线缓存', icon: 'icon-cangchucangku' },

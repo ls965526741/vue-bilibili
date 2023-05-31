@@ -1,6 +1,6 @@
 var Mock = require('mockjs')
 var Random = Mock.Random
-
+const publicPath = process.env.BASE_URL
 const userData = [
   {
     id: '1',
@@ -8,7 +8,7 @@ const userData = [
     username: 'liaoshuai',
     password: '123456',
     token: Random.cword('string', 10, 20),
-    user_img: '/img/common/user.png'
+    user_img: publicPath + '/img/common/user.png'
   }
 ]
 Mock.mock('/register', 'post', req => {
